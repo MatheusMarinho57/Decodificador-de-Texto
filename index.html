@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <script src="index.js"></script>
+  
   <title>Decodificador de texto</title>
 </head>
 <body>
@@ -24,17 +24,21 @@
         </p> 
       </div>
       <div class="buttons">
-        <button class="btn" id="crip">Criptografar</button>
-        <button class="btn" id="descrip">Descriptografar</button>
+        <button class="btn" id="crip" onclick="btnCriptograph()">Criptografar</button>
+        <button class="btn" id="descrip" onclick="btnDescriptograph()">Descriptografar</button>
       </div>
     </section>
     <section>
+      <div class="output">
       <textarea name="output" id="output-area"></textarea>
       <img src="./Images/High quality products 1 1.svg" alt="image">
       <h3 class="bold-output">Nenhuma mensagem encontrada</h3>
       <p class="output-message">Digite um texto que você deseja criptografar ou descriptografar.</p>
+    </div>
+    <button onclick="copyToClipboard()" id="btn-clip" class="btn-clipboard" style="display: none;">Copiar</button>
     </section>
   </main>
   <footer>Desenvolvido por Matheus Marinho</footer>
+  <script src="index.js"></script>
 </body>
 </html>
