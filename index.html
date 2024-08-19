@@ -12,13 +12,12 @@
     <img src="./Images/Frame 6.png" alt="Logo-da-alura">
   </header>
   <main>
-    <section class="">
+    <section class="main-area">
       <div class="text">
         <textarea name="input" id="typehere" placeholder="Digite seu texto"></textarea>
-
       </div>
       <div class="info">
-        <p>
+        <p class="info-phrase">
           <img src="./Images/bi_exclamation-circle-fill.png" alt="exclamation-mark">
           Apenas letras minúsculas e sem acento
         </p> 
@@ -28,14 +27,22 @@
         <button class="btn" id="descrip" onclick="btnDescriptograph()">Descriptografar</button>
       </div>
     </section>
-    <section>
+    <section class="side-area">
       <div class="output">
-      <textarea name="output" id="output-area"></textarea>
-      <img src="./Images/High quality products 1 1.svg" alt="image">
-      <h3 class="bold-output">Nenhuma mensagem encontrada</h3>
-      <p class="output-message">Digite um texto que você deseja criptografar ou descriptografar.</p>
+      <textarea name="output" id="output-area" disabled></textarea>
+      <img src="./Images/High quality products 1 1.svg" alt="image" class="output-image">
+      <div class="disapear-message">
+        <h3 class="bold-output">
+          Nenhuma mensagem <br>
+          encontrada
+        </h3>
+        <p class="output-message">
+          Digite um texto que você deseja <br>
+          criptografar ou descriptografar.
+        </p>
+      </div>
     </div>
-    <button onclick="copyToClipboard()" id="btn-clip" class="btn-clipboard" style="display: none;">Copiar</button>
+    <button onclick="copyToClipboard()" id="btn-clip" class="btn" style="display: none;">Copiar</button>
     </section>
   </main>
   <footer>Desenvolvido por Matheus Marinho</footer>

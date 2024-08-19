@@ -1,12 +1,14 @@
 const textArea = document.querySelector('#typehere');
 const output = document.querySelector('#output-area');
-const clipboardButton = document.querySelector('#btn-clip')
+const clipboardButton = document.querySelector('#btn-clip');
+const disapearMessage = document.querySelector('.disapear-message');
 
 const btnCriptograph = () => {
   let showCriptograph = criptograph(textArea.value);
   output.value = showCriptograph;
   textArea.value = '';
   clipboardButton.style.display = 'block';
+  disapearMessage.style.display = 'none';
 }
 
 const criptograph = (string) => {
@@ -26,6 +28,7 @@ const btnDescriptograph = () => {
   output.value = showDescriptograph;
   textArea.value = '';
   clipboardButton.style.display = 'block';
+  disapearMessage.style.display = 'none';
 }
 
 const descriptograph = (string) => {
